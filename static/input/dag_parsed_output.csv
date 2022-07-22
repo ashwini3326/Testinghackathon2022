@@ -1,13 +1,13 @@
 ,controlm_job_name,dag_id,task_id,source,target
 0,,airflow_monitoring,echo,echo,test
-1,DAG_EXPORT,export_dag,export_apac_sales_stg,dmgcp-del-108.db_sse_lineage.apac_sales_stg,gs://ssedelivery/bqloads/export_apac_sales_stg/apac_sales_stg.csv
-2,DAG_EXPORT,export_dag,export_eu_sales_stg,dmgcp-del-108.db_sse_lineage.eu_sales_stg,gs://ssedelivery/bqloads/load_eu_sales_stg/eu_sales_stg.csv
-3,DAG_DATAFLOW_LOAD,dataflow_dag,RDBMS_TO_BQ,gs://ssedelivery/datasets/avro/*,db_sse.avro_test
-4,DAG_INGESTION,ingestion_dag,load_eu_sales_stg,gs://ssedelivery/bqloads/load_eu_sales_stg/*,dmgcp-del-108.db_sse_lineage.eu_sales_stg
-5,DAG_INGESTION,ingestion_dag,load_apac_sales_stg,gs://ssedelivery/bqloads/load_apac_sales_stg/*,dmgcp-del-108.db_sse_lineage.apac_sales_stg
-6,DAG_LOAD_GOLD_FROM_SILVER,load_gold_from_silver,global_sales_insert,dmgcp-del-108.db_sse_lineage.eu_sales | dmgcp-del-108.db_sse_lineage.apac_sales,dmgcp-del-108.db_sse_lineage.global_sales
-7,DAG_LOAD_GOLD_FROM_SILVER,load_gold_from_silver,global_best_selling_prdouct,dmgcp-del-108.db_sse_lineage.global_product_catalog_v | dmgcp-del-108.db_sse_lineage.global_sales,dmgcp-del-108.db_sse_lineage.global_best_selling_prdouct
-8,DAG_LOAD_SILVER_FROM_BRONZE,load_silver_from_bronze,global_product_catalog_v_ddl,dmgcp-del-108.db_sse_lineage.global_product_catalog,dmgcp-del-108.db_sse_lineage.global_product_catalog_v
-9,DAG_LOAD_SILVER_FROM_BRONZE,load_silver_from_bronze,eu_sales_insert,dmgcp-del-108.db_sse_lineage.eu_sales_stg,dmgcp-del-108.db_sse_lineage.eu_sales
-10,DAG_LOAD_SILVER_FROM_BRONZE,load_silver_from_bronze,apac_sales_insert,dmgcp-del-108.db_sse_lineage.apac_sales_stg,dmgcp-del-108.db_sse_lineage.apac_sales
-11,DAG_LOAD_SILVER_FROM_BRONZE,load_silver_from_bronze,global_product_catalog_insert,dmgcp-del-108.db_sse_lineage.global_product_catalog_stg,dmgcp-del-108.db_sse_lineage.global_product_catalog
+1,DAG_EXPORT,export_dag,export_apac_sales_stg,epam-bq-project.zsdt.apac_sales_stg,gs://epam-gcs-bucket/bqloads/export_apac_sales_stg/apac_sales_stg.csv
+2,DAG_EXPORT,export_dag,export_eu_sales_stg,epam-bq-project.zsdt.eu_sales_stg,gs://epam-gcs-bucket/bqloads/load_eu_sales_stg/eu_sales_stg.csv
+3,DAG_DATAFLOW_LOAD,dataflow_dag,RDBMS_TO_BQ,gs://epam-gcs-bucket/datasets/avro/*,db_sse.avro_test
+4,DAG_INGESTION,ingestion_dag,load_eu_sales_stg,gs://epam-gcs-bucket/bqloads/load_eu_sales_stg/*,epam-bq-project.zsdt.eu_sales_stg
+5,DAG_INGESTION,ingestion_dag,load_apac_sales_stg,gs://epam-gcs-bucket/bqloads/load_apac_sales_stg/*,epam-bq-project.zsdt.apac_sales_stg
+6,DAG_LOAD_GOLD_FROM_SILVER,load_gold_from_silver,global_sales_insert,epam-bq-project.zsdt.eu_sales | epam-bq-project.zsdt.apac_sales,epam-bq-project.zsdt.global_sales
+7,DAG_LOAD_GOLD_FROM_SILVER,load_gold_from_silver,global_best_selling_prdouct,epam-bq-project.zsdt.global_product_catalog_v | epam-bq-project.zsdt.global_sales,epam-bq-project.zsdt.global_best_selling_prdouct
+8,DAG_LOAD_SILVER_FROM_BRONZE,load_silver_from_bronze,global_product_catalog_v_ddl,epam-bq-project.zsdt.global_product_catalog,epam-bq-project.zsdt.global_product_catalog_v
+9,DAG_LOAD_SILVER_FROM_BRONZE,load_silver_from_bronze,eu_sales_insert,epam-bq-project.zsdt.eu_sales_stg,epam-bq-project.zsdt.eu_sales
+10,DAG_LOAD_SILVER_FROM_BRONZE,load_silver_from_bronze,apac_sales_insert,epam-bq-project.zsdt.apac_sales_stg,epam-bq-project.zsdt.apac_sales
+11,DAG_LOAD_SILVER_FROM_BRONZE,load_silver_from_bronze,global_product_catalog_insert,epam-bq-project.zsdt.global_product_catalog_stg,epam-bq-project.zsdt.global_product_catalog

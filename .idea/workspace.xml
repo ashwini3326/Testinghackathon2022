@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cba13a25-36c3-461d-9fbb-7445742576af" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/lineage.py" beforeDir="false" afterPath="$PROJECT_DIR$/lineage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main - Copy.py" beforeDir="false" afterPath="$PROJECT_DIR$/main - Copy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main - Copy.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/input/dag_parsed_output.csv" beforeDir="false" afterPath="$PROJECT_DIR$/static/input/dag_parsed_output.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/generateTableLineage - Copy.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/generateTableLineage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/generateTableLineage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout.html" afterDir="false" />
@@ -25,7 +28,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Lineage_UI/Lineage_UI" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
