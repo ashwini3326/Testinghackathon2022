@@ -1,0 +1,18 @@
+[
+    {
+        "name": "dmgcp-del-108.db_sse_lineage.global_best_selling_prdouct",
+        "parent": "null",
+        "children": [
+            {
+                "name": "dmgcp-del-108.db_sse_lineage.global_product_catalog_v",
+                "parent": "dmgcp-del-108.db_sse_lineage.global_best_selling_prdouct",
+                "children": []
+            },
+            {
+                "name": "dmgcp-del-108.db_sse_lineage.global_sales",
+                "parent": "dmgcp-del-108.db_sse_lineage.global_best_selling_prdouct",
+                "children": []
+            }
+        ]
+    }
+]

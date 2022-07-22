@@ -1,0 +1,12 @@
+{% extends "layout.html"%}
+
+{% block content %}
+	<div class="border-top pt-3 border-bottom">
+		<p>Something went wrong, please check below error log!</p>
+	</div>
+	
+	<div class="border-top pt-3 border-bottom">
+		<p>{{failure_msg}}</p>
+	</div>
+	
+{% endblock content %}

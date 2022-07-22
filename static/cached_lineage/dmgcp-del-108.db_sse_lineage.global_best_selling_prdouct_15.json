@@ -1,0 +1,13 @@
+[
+    {
+        "name": "dmgcp-del-108.db_sse_lineage.global_best_selling_prdouct",
+        "parent": "null",
+        "children": [
+            {
+                "name": "dmgcp-del-108.db_sse_lineage.some_platinum_table",
+                "parent": "dmgcp-del-108.db_sse_lineage.global_best_selling_prdouct",
+                "children": []
+            }
+        ]
+    }
+]

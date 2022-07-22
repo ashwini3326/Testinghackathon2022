@@ -1,0 +1,65 @@
+[
+    {
+        "name": "dmgcp-del-108.db_sse_lineage.global_best_selling_prdouct",
+        "parent": "null",
+        "children": [
+            {
+                "name": "dmgcp-del-108.db_sse_lineage.global_product_catalog_v",
+                "parent": "dmgcp-del-108.db_sse_lineage.global_best_selling_prdouct",
+                "children": [
+                    {
+                        "name": "dmgcp-del-108.db_sse_lineage.global_product_catalog",
+                        "parent": "dmgcp-del-108.db_sse_lineage.global_product_catalog_v",
+                        "children": [
+                            {
+                                "name": "dmgcp-del-108.db_sse_lineage.global_product_catalog_stg",
+                                "parent": "dmgcp-del-108.db_sse_lineage.global_product_catalog",
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "dmgcp-del-108.db_sse_lineage.global_sales",
+                "parent": "dmgcp-del-108.db_sse_lineage.global_best_selling_prdouct",
+                "children": [
+                    {
+                        "name": "dmgcp-del-108.db_sse_lineage.apac_sales",
+                        "parent": "dmgcp-del-108.db_sse_lineage.global_sales",
+                        "children": [
+                            {
+                                "name": "dmgcp-del-108.db_sse_lineage.apac_sales_stg",
+                                "parent": "dmgcp-del-108.db_sse_lineage.apac_sales",
+                                "children": [
+                                    {
+                                        "name": "gs://ssedelivery/bqloads/load_apac_sales_stg/*",
+                                        "parent": "dmgcp-del-108.db_sse_lineage.apac_sales_stg",
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "dmgcp-del-108.db_sse_lineage.eu_sales",
+                        "parent": "dmgcp-del-108.db_sse_lineage.global_sales",
+                        "children": [
+                            {
+                                "name": "dmgcp-del-108.db_sse_lineage.eu_sales_stg",
+                                "parent": "dmgcp-del-108.db_sse_lineage.eu_sales",
+                                "children": [
+                                    {
+                                        "name": "gs://ssedelivery/bqloads/load_eu_sales_stg/*",
+                                        "parent": "dmgcp-del-108.db_sse_lineage.eu_sales_stg",
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
