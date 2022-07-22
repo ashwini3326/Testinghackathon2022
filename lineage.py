@@ -2,7 +2,7 @@ import pandas as pd
 import json
 import os
 import shutil
-from google.cloud import bigquery
+#from google.cloud import bigquery
 
     
 def download_dag_parsed_output(table_name):
